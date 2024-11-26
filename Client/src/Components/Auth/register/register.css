@@ -41,7 +41,7 @@ Link{
 }
 .sub_divisions_register{
     width: 600px;
-    height: 600px;
+    height: 500px;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
@@ -62,7 +62,7 @@ Link{
 }
 .name{
     width: 250px;
-    height: 50px;
+    height: 45px;
     background: rgba( 34, 33, 82, 0.8 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 6.5px );

@@ -59,7 +59,7 @@ const [ConPass,SetConpass] = useState('')
               Create new account <span className='dot'>.</span>
             </h1>
       <p className='para'>
-        Already A Menber ? <span className='Log'>
+        Already A Member ? <span className='Log'>
           <Link to={'/login'}>
           Log in 
           </Link>
