@@ -10,7 +10,7 @@ function Posts() {
     useEffect(() => {
       async function fetchData() {
         try {
-          const response = await axios.get('http://localhost:3000/posts')            
+          const response = await axios.get('https://blog-application-backend-git-master-vyshnavi-sappas-projects.vercel.app/posts')            
            
               const tttttt = response.data
          await Setdata(tttttt);
@@ -35,7 +35,7 @@ function Posts() {
       }}>
         <div className="image" >
           <img
-            src={`http://localhost:3000/${fromDB.image}`}
+            src={`https://blog-application-backend-git-master-vyshnavi-sappas-projects.vercel.app/${fromDB.image}`}
             alt="image"
             width={'400px'}
             height={'300px'}
