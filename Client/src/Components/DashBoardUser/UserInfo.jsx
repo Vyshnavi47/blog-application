@@ -41,7 +41,7 @@ function HandleLogout(){
 const data = async () => {
   try {
     const emailData = Cookies.getItem('CheckEmail');
-      const response = await axios.post('http://localhost:3000/count', {
+      const response = await axios.post('https://blog-application-backend-git-master-vyshnavi-sappas-projects.vercel.app/count', {
           email: emailData
       });
       SetBloged(response.data);
@@ -53,7 +53,7 @@ const data = async () => {
 async function FETCH(){
   try {
     const token = Cookies.getItem('jwtToken');
-    const response =await axios.post('http://localhost:3000/getsingleuserdata', null, {
+    const response =await axios.post('https://blog-application-backend-git-master-vyshnavi-sappas-projects.vercel.app/getsingleuserdata', null, {
       headers: {
           'x-token': token,
       }
@@ -70,7 +70,7 @@ const tttttttttttttttt = response.data
 async function HandleDelete(val){
   const Blodid = val;
   console.log(Blodid)
-  const response = await axios.post('http://localhost:3000/delete',{
+  const response = await axios.post('https://blog-application-backend-git-master-vyshnavi-sappas-projects.vercel.app/delete',{
     id:Blodid
   }).then(
     (res)=>{
@@ -155,7 +155,7 @@ async function HandleDelete(val){
                                           
                                           </span> 
                                               </div>                                        
-                                          <img src={`http://localhost:3000/${val.image}`} alt="image"style={{ width:'300px',height:'300px'}}  key={val.image} />
+                                          <img src={`https://blog-application-backend-git-master-vyshnavi-sappas-projects.vercel.app/${val.image}`} alt="image"style={{ width:'300px',height:'300px'}}  key={val.image} />
                                           <div className="inner_span__">{val.heading}</div>
                                         </div>
                                       ))
