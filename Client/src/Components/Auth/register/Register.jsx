@@ -18,7 +18,7 @@ const [ConPass,SetConpass] = useState('')
      if(pass != ConPass){
         alert("Pass word not matched...")
      }else{
-        await axios.post("http://localhost:3000/register",{
+        await axios.post("https://blog-application-backend-git-master-vyshnavi-sappas-projects.vercel.app/register",{
           first:first,
           last:last,
           email:email,
