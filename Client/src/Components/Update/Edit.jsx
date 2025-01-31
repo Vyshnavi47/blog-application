@@ -64,7 +64,7 @@ function Edit() {
       toast('All fields are required....', { theme: 'dark' });
     } else {
       // update url to update the data....
-      const Updated = await axios.put(`http://localhost:3000/updateTheBlog/${GETDATA._id}`,Data).then(
+      const Updated = await axios.put(`https://blog-application-backend-git-master-vyshnavi-sappas-projects.vercel.app/updateTheBlog/${GETDATA._id}`,Data).then(
         (res)=>{toast(res.data)}
       )
 
