@@ -3,7 +3,30 @@ const app = express();
 const mongoose = require('mongoose')
 const cors = require('cors');
 app.use(express.json());
-app.use(cors());
+// app.use(cors());
+
+app.use(
+  cors({
+    origin: '*',
+    methods:'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+    allowedHeaders: [
+      "Content-Type",
+      "Authorization",
+      "X-Content-Type-Options",
+      "Accept",
+      "X-Requested-With",
+      "Origin",
+      "Access-Control-Request-Method",
+      "Access-Control-Request-Headers",
+      "Access-Control-Allow-Origin",
+      "Access-Control-Allow-Methods",
+      "Access-Control-Allow-Headers",
+    ],
+  })
+);
+
+
+
 
 app.get("/",(req,res)=>{
     res.send("Hello..")
