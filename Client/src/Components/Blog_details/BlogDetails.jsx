@@ -39,7 +39,7 @@ if (Cookies.getItem('Logined')) {
                            </center>
 
 
-        <img src={`http://localhost:3000/${GETDATA.image}`} alt='image' width={'800px'} height={'400px'} className='BLog_image_details' style={{marginTop:'10px'}}/>
+        <img src={`https://blog-application-backend-git-master-vyshnavi-sappas-projects.vercel.app/${GETDATA.image}`} alt='image' width={'800px'} height={'400px'} className='BLog_image_details' style={{marginTop:'10px'}}/>
 
                             
                            
