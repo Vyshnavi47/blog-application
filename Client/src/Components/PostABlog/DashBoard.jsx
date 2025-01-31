@@ -60,7 +60,7 @@ useEffect(()=>{
       toast("All fields are required....",{theme:'dark'});
     }
     else{  
-   await axios.post('http://localhost:3000/blogs',Data).then(
+   await axios.post('https://blog-application-backend-git-master-vyshnavi-sappas-projects.vercel.app/blogs',Data).then(
     (res)=>{
       toast("done")
      window.location.href = "/";
